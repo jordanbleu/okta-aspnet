@@ -7,7 +7,7 @@
   <PropertyGroup>
     <Description>Official Okta middleware for ASP.NET Core 3.0+. Easily add authentication and authorization to ASP.NET Core applications.</Description>
     <Copyright>(c) 2020 Okta, Inc.</Copyright>
-    <VersionPrefix>3.5.0</VersionPrefix>
+    <VersionPrefix>3.6.0</VersionPrefix>
     <Authors>Okta, Inc.</Authors>
     <AssemblyName>Okta.AspNetCore</AssemblyName>
     <PackageId>Okta.AspNetCore</PackageId>
@@ -21,6 +21,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="3.1.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -29,6 +30,7 @@
   </ItemGroup>
   
   <ItemGroup>
+    <ProjectReference Include="..\..\okta-idx-dotnet\src\Okta.Idx.Sdk\Okta.Idx.Sdk.csproj" />
     <ProjectReference Include="..\Okta.AspNet.Abstractions\Okta.AspNet.Abstractions.csproj" />
   </ItemGroup>
 </Project>
